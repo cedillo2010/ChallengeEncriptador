@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <title>Encriptador</title>
+</head>
+<body>
+    <header>
+        <img src="imagenes/Logo.png" alt="logo de Alura con la letra inicia a">
+    </header>
+ 
+    <main>
+        <section>
+             <textarea class="textoEntrada" cols = "40"  rows="13"
+                placeholder="Ingreso Texto aquí"></textarea>
+            
+            <div class="alerta">
+                &#9888 Solo acepta minúsculas y sin acentos.
+            </div>
+            <div class="botones">
+                <button class="encriptar" onclick="btnEncriptar()">
+                Encriptar
+                </button>
+
+                <button class="desencriptar" onclick="btnDesencriptar()">
+                Desencriptar
+             
+            </div>
+
+        </section>
+
+         <section class="salida">
+            <div>
+            <textarea class="textoSalida"  cols="18" rows = "8"></textarea>
+            </div>
+            <div>
+            </button>
+            <button class="copiar" onclick="copiar()"> Copiar </button>
+            </div>
+            </section>
+    </main>
+    <footer> 
+        <p> María Cedillo Oracle One Alura </p>
+    </footer>
+    <script src="script.js"> </script>
+</body>
+</html>
